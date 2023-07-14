@@ -57,26 +57,22 @@
     imageContainer.addEventListener("touchmove", handleTouchMove, false);
 
     function handleTouchStart(event) {
-    startX = event.touches[0].clientX;
+        startX = event.touches[0].clientX;
     }
 
     function handleTouchMove(event) {
-    var moveX = event.touches[0].clientX;
-    var diffX = startX - moveX;
+        var moveX = event.touches[0].clientX;
+        var diffX = startX - moveX;
 
-    // Desplazamiento hacia la derecha
-    if (diffX > threshold && currentImageIndex < images.length - 1) {
-        currentImageIndex++;
+        if (diffX > threshold && currentImageIndex < images.length - 1) {
+            currentImageIndex++;
+        } else if (diffX < -threshold && currentImageIndex > 0) {
+            currentImageIndex--;
+        }
+
+        imageContainer.style.transform = "translateX(-" + currentImageIndex * 100 + "%)";
+
         startX = moveX;
     }
-    // Desplazamiento hacia la izquierda
-    else if (diffX < -threshold && currentImageIndex > 0) {
-        currentImageIndex--;
-        startX = moveX;
-    }
-
-    // Aplica el desplazamiento a la imagen actual
-    imageContainer.style.transform = "translateX(-" + currentImageIndex * 100 + "%)";
-}
 
 </script>

@@ -228,13 +228,15 @@ body{
         overflow: hidden;
         width: 100%;
         white-space: nowrap;
+        transition: transform 0.3s ease-in-out;
       }
       
-    #imageContainer img {
+      #imageContainer img {
         display: inline-block;
         width: 100%;
         height: auto;
-    }
+      }
+      
       
 
     
