@@ -214,6 +214,28 @@ body{
         margin-left: 125px;
         margin-bottom: 80px;
     }
+    .imagenes{
+        background-color: #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .adl{
+        width: 350px;
+        background-color:#f2f2f2 ;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #imageContainer {
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+      }
+      
+    #imageContainer img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+      
 
     
 
