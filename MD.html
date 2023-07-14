@@ -23,49 +23,52 @@
     <div class="container0">
         <div class="col2">
             <img src="" alt="">
-            <img class="dni2" src="img\dni.svg" alt="">
+            <img class="dni2" src="img\credenciales.svg" alt="">
             <strong class="s">
                 Certificado de Vacunacion COVID 19
             </strong>
             <a class="contar">
-                <img src="img\chevron-down.svg" alt="">
+                <img src="img\chevron-down.svg" class="toggle-icon" alt="">
             </a>
             <div class="submenu">
                 <!-- Contenido del submenu -->
+                
+                <div >
+                    <img class="qr" src="img\qr-code-148732_1280.webp" alt="">
+                </div>
+                <strong class="DA"> Dosis aplicadas: 3</strong>
                 <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-                    <li>Elemento 3</li>
+                    
+                    <button type="button" class="boton3">Ver certificado</button>
+                    <button type="button" class="boton4">Descargar certificado</button>
+                    
                 </ul>
             </div>
         </div> 
         <div class="col2">
-            <img class="dni" src="img\dni.svg" alt="">
+            <img class="dni" src="img\credenciales.svg" alt="">
             <strong class="s">CUIL</strong>
             <a class="contar">
-                <img src="img\chevron-down.svg" alt="">
+                <img src="img\chevron-down.svg" class="toggle-icon" alt="">
             </a>
-            <div class="submenu">
-                <!-- Contenido del submenu -->
-                <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-                    <li>Elemento 3</li>
+            <div class="submenu2">
+                
+                <ul >
+                    <button type="button" class="boton2">DESCARGAR CONSTANCIA DE CUIL</button>
                 </ul>
+                
             </div>
         </div>
         <div class="col2">
             <img class="dni" src="img\dni.svg" alt="">
             <strong class="text">Documento Nacional de Identidad (DNI)</strong>
             <a class="contar">
-                <img src="img\chevron-down.svg" alt="">
+                <img src="img\chevron-down.svg" class="toggle-icon" alt="">
             </a>
             <div class="submenu">
                 <!-- Contenido del submenu -->
-                <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-                    <li>Elemento 3</li>
+                <ul >
+                    <button type="button" class="boton">VER DNI DIGITAL</button>
                 </ul>
             </div>
         </div>
@@ -74,10 +77,13 @@
     <script>
 
         const contarLinks = document.querySelectorAll('.contar');
+
         contarLinks.forEach((contarLink) => {
+            const toggleIcon = contarLink.querySelector('.toggle-icon');
             contarLink.addEventListener('click', () => {
                 const submenu = contarLink.nextElementSibling;
                 submenu.classList.toggle('show');
+                toggleIcon.src = submenu.classList.contains('show') ? 'img/chevron-up.svg' : 'img/chevron-down.svg';
             });
         });
 

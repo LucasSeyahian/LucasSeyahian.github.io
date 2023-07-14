@@ -29,10 +29,6 @@ body{
     background-color: #f2f2f2;
 }
 
-.myDiv {
-    
-  }
-
 .brand-icon {
     max-width: 100%;
     height: auto;
@@ -135,6 +131,88 @@ body{
     .ss{
         display: inline;
         width: 0px;
+    }
+    .boton{
+        padding-left: 100px;
+        background-color: #2fbe08;
+        color: white;
+        margin-left: 0px;
+        padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+        border: none;
+        white-space: nowrap;
+        font-size: 16px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 20px;
+    }
+    .boton2{
+        padding-left: 25px;
+        background-color: #0abdf4;
+        color: white;
+        margin-left: 0px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+        border: none;
+        white-space: nowrap;
+        font-size: 16px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 20px;
+    }
+    .boton3{
+        padding-left: 115px;
+        background-color: #0abdf4;
+        color: white;
+        margin-left: 0px;
+        padding-right: 120px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+        border: none;
+        white-space: nowrap;
+        font-size: 16px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 20px;
+    }
+    .boton4{
+        padding-left: 90px;
+        background-color: #2fbe0800;
+        color: rgb(13, 55, 209);
+        margin-left: 0px;
+        padding-right: 90px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+        white-space: nowrap;
+        font-size: 16px;
+        border-top: 2px solid rgb(13, 55, 209);
+        border-bottom: 2px solid rgb(13, 55, 209);
+        border-radius: 20px ;
+    }
+    .submenu2{
+        display: none;
+    
+    }
+    .qr{
+        width: 130px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: 120px;
+    }
+    .DA{
+        margin-left: 125px;
+        margin-bottom: 80px;
     }
 
     
