@@ -33,46 +33,24 @@
         <strong class="ss">DNI Digital</strong>
 
     </div>
-    <div class="imagenes">
-
-        <div id="imageContainer">
-            <img src="img/WhatsApp Image 2023-07-14 at 17.45.33.jpg" alt="Imagen 1">
-            <img src="img/WhatsApp Image 2023-07-14 at 17.47.11.jpg" alt="Imagen 2">
+    <div class="slider-container">
+        <div class="slider">
+          <img src="img/WhatsApp Image 2023-07-14 at 17.45.33.jpg" alt="Imagen 1" onclick="cambiarImagen(0)">
+          <img src="img/WhatsApp Image 2023-07-14 at 17.47.11.jpg" alt="Imagen 2" onclick="cambiarImagen(1)">
         </div>
-
     </div>
+      
+      
     
 </body>
 </html>
 
 <script>
-    var imageContainer = document.getElementById("imageContainer");
-    var images = imageContainer.getElementsByTagName("img");
+    var slider = document.querySelector('.slider');
+    var images = slider.getElementsByTagName('img');
 
-    var currentImageIndex = 0;
-    var startX = 0;
-    var threshold = 50; // Umbral de desplazamiento para cambiar de imagen
-
-    imageContainer.addEventListener("touchstart", handleTouchStart, false);
-    imageContainer.addEventListener("touchmove", handleTouchMove, false);
-
-    function handleTouchStart(event) {
-        startX = event.touches[0].clientX;
-    }
-
-    function handleTouchMove(event) {
-        var moveX = event.touches[0].clientX;
-        var diffX = startX - moveX;
-
-        if (diffX > threshold && currentImageIndex < images.length - 1) {
-            currentImageIndex++;
-        } else if (diffX < -threshold && currentImageIndex > 0) {
-            currentImageIndex--;
-        }
-
-        imageContainer.style.transform = "translateX(-" + currentImageIndex * 100 + "%)";
-
-        startX = moveX;
+    function cambiarImagen(index) {
+        slider.style.transform = 'translateX(-' + (index * 100) + '%)';
     }
 
 </script>

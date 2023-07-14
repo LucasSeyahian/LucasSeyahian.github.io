@@ -231,11 +231,27 @@ body{
         transition: transform 0.3s ease-in-out;
       }
       
-      #imageContainer img {
+    #imageContainer img {
         display: inline-block;
         width: 100%;
         height: auto;
-      }
+    }
+    .slider-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .slider {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+      
       
       
 
