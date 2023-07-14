@@ -33,6 +33,21 @@ body{
     max-width: 100%;
     height: auto;
 }
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
 
 @media only screen and (max-width: 480px) {
     /* Estilos específicos para dispositivos con un ancho máximo de 480px, como iPhone */
@@ -236,27 +251,52 @@ body{
         width: 100%;
         height: auto;
     }
-    .slider-container {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-    
     .slider {
-        display: flex;
-        transition: transform 0.3s ease-in-out;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
-    
+      
+    .slider::-webkit-scrollbar {
+        display: none;
+    }
+      
     .slider img {
-        width: 100%;
-        height: auto;
+        scroll-snap-align: start;
     }
-      
-      
-      
+    .slider-container{
+        padding-bottom:40px ;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: #f2f2f2 ;
+    }
+    .VD{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .container3{
+        margin-top: 20px;
 
+    }
+    .tel{
+        display: inline;
+        width: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .ma{
+        font-size: 15px;
+        display: inline;
+    }
+    .contain2{
+        margin-top: 30px;
+    }
     
-
-
-
+    
+    
+        
+        
 }
