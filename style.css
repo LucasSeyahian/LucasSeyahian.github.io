@@ -21,7 +21,7 @@
 strong{
     display: inline;
     width: 90px;
-    color: rgb(0, 0, 0);
+    
 
     
 }
@@ -51,7 +51,9 @@ body{
         display: none;
         /* ... otros estilos ... */
     }
-    
+    .ss{
+        color: white;
+    }
     .submenu.show {
         display: block;
     }
@@ -128,7 +130,7 @@ body{
         
     }
     .text{
-        width: 20px;
+        font-size: 14px;
     }
     .ss{
         display: inline;

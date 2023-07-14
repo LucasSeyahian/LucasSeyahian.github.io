@@ -21,48 +21,64 @@
 
     </div>
     <div class="container0">
-          <div class="col2">
+        <div class="col2">
             <img src="" alt="">
             <img class="dni2" src="img\dni.svg" alt="">
             <strong class="s">
                 Certificado de Vacunacion COVID 19
             </strong>
-            <a>
+            <a class="contar">
                 <img src="img\chevron-down.svg" alt="">
             </a>
-          </div> 
-          <div class="col2">
+            <div class="submenu">
+                <!-- Contenido del submenu -->
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="col2">
             <img class="dni" src="img\dni.svg" alt="">
             <strong class="s">CUIL</strong>
-            <a>
+            <a class="contar">
                 <img src="img\chevron-down.svg" alt="">
             </a>
-          </div>
-          <div class="col2">
-                <img class="dni" src="img\dni.svg" alt="">
-                <strong class="text">Documento Nacional de Identidad (DNI)</strong>
-                <div class="contar">
-                    <a>
-                        <img src="img\chevron-down.svg" alt="">
-                    </a>
-                </div>
-                <div class="submenu">
-                    <ul>
-                        <li>Elemento 1</li>
-                        <li>Elemento 2</li>
-                        <li>Elemento 3</li>
-                    </ul>
-                </div>
-                
+            <div class="submenu">
+                <!-- Contenido del submenu -->
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col2">
+            <img class="dni" src="img\dni.svg" alt="">
+            <strong class="text">Documento Nacional de Identidad (DNI)</strong>
+            <a class="contar">
+                <img src="img\chevron-down.svg" alt="">
+            </a>
+            <div class="submenu">
+                <!-- Contenido del submenu -->
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
             </div>
         </div>
     </div>
+    
     <script>
-        const toggleSubmenu = document.querySelector('.contar');
-        const submenu = document.querySelector('.submenu');
 
-        toggleSubmenu.addEventListener('click', () => {
-            submenu.classList.toggle('show');
+        const contarLinks = document.querySelectorAll('.contar');
+        contarLinks.forEach((contarLink) => {
+            contarLink.addEventListener('click', () => {
+                const submenu = contarLink.nextElementSibling;
+                submenu.classList.toggle('show');
+            });
         });
 
     </script>
