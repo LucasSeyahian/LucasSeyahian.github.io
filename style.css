@@ -47,6 +47,15 @@ body{
         text-align: center;
         margin-top: 15px;
     }
+    .submenu {
+        display: none;
+        /* ... otros estilos ... */
+    }
+    
+    .submenu.show {
+        display: block;
+    }
+    
     .containerG{
     
         background-color:#f2f2f2 ;
