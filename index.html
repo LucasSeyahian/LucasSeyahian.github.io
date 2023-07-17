@@ -14,9 +14,11 @@
 
 </head>
 <body>
+    <img id="firstImg" class="fullscreen-image" src="img\WhatsApp Image 2023-07-16 at 22.46.16.jpg" alt="Primera imagen">
     <div class="container1">
         <img alt="Mi Argentina" title="Mi Argentina" src="img\miargentina.svg" class="brand-icon" height="40">
     </div>
+
     <div class="containerG">
         <div class="container text-center">
             <div class="row row-cols-2">
@@ -68,4 +70,24 @@
     </div>
     
 </body>
+<script>
+    // Obtenemos referencias a los elementos de imagen
+    var firstImg = document.getElementById('firstImg');
+    var secondImg = document.getElementById('secondImg');
+
+    // Mostramos la primera imagen a pantalla completa al cargar la página
+    firstImg.style.display = 'block';
+
+    // Ocultamos la primera imagen después de 3 segundos y mostramos la segunda imagen
+    setTimeout(function() {
+        firstImg.style.display = 'none';
+        secondImg.style.display = 'block';
+    }, 3000);
+
+    // Ocultamos la segunda imagen después de 5 segundos
+    setTimeout(function() {
+        secondImg.style.display = 'none';
+    }, 8000);
+
+</script>
 </html>
