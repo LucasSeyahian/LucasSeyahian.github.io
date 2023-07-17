@@ -49,7 +49,7 @@ body{
     height: auto;
   }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 480px) {
     /* Estilos específicos para dispositivos con un ancho máximo de 480px, como iPhone */
     .brand-icon {
         max-width: 80%;
@@ -148,6 +148,7 @@ body{
         display: inline;
         width: 0px;
     }
+
     .boton{
         padding-left: 100px;
         background-color: #2fbe08;
@@ -199,6 +200,7 @@ body{
         border-bottom: 2px solid white;
         border-radius: 20px;
     }
+
     .boton4{
         padding-left: 90px;
         background-color: #2fbe0800;
@@ -215,10 +217,12 @@ body{
         border-bottom: 2px solid rgb(13, 55, 209);
         border-radius: 20px ;
     }
+
     .submenu2{
         display: none;
     
     }
+    
     .qr{
         width: 130px;
         margin-top: 10px;
